@@ -15,6 +15,7 @@ import androidx.core.view.ViewCompat
 import androidx.palette.graphics.Palette
 import com.example.dailypractice.R
 import com.example.dailypractice.utils.BarUtils
+import com.example.dailypractice.utils.DeviceUtils
 import com.example.dailypractice.utils.PictureUtils
 import kotlinx.android.synthetic.main.activity_immersive_bar.*
 
@@ -71,8 +72,8 @@ class ImmersiveBar : AppCompatActivity() {
         val colorCount = 5
         val left = 0
         val top = 0
-        val right = getScreenWidth()
-        val bottom = getStatusBarHeight()
+        val right = DeviceUtils.getScreenWidth(this)
+        val bottom = DeviceUtils.getStatusBarHeight(this)
 
         Palette
             .from(bitmap)
@@ -111,18 +112,5 @@ class ImmersiveBar : AppCompatActivity() {
         window.decorView.systemUiVisibility = flags xor View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
     }
 
-    private fun getScreenWidth(): Int {
-        val displayMetrics = DisplayMetrics()
-        windowManager.defaultDisplay.getMetrics(displayMetrics)
-        return displayMetrics.widthPixels
-    }
 
-    private fun getStatusBarHeight(): Int {
-        var result = 0
-        val resourceId = resources.getIdentifier("status_bar_height", "dimen", "android")
-        if (resourceId > 0) {
-            result = resources.getDimensionPixelSize(resourceId)
-        }
-        return result
-    }
 }
