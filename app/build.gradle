@@ -42,4 +42,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
+    // palette 对图片进行颜色提取和识别
+    implementation 'androidx.palette:palette:1.0.0'
+
 }

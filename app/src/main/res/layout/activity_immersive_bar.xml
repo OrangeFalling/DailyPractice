@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".statusbar.ImmersiveBar">
+    tools:context=".statusbar.ImmersiveBar"
+    android:background="#123462"
+    android:id="@+id/root_layout">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bg_picture_light" />
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button Dark" />
+
+        <Button
+            android:id="@+id/button_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button Light" />
+
+    </LinearLayout>
+
+</FrameLayout>
