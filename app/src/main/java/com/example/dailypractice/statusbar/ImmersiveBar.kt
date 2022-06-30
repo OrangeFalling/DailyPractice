@@ -4,7 +4,6 @@ import android.graphics.Bitmap
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.DisplayMetrics
 import android.util.Log
 import android.view.View
 import android.widget.Button
@@ -14,23 +13,23 @@ import androidx.core.graphics.ColorUtils
 import androidx.core.view.ViewCompat
 import androidx.palette.graphics.Palette
 import com.example.dailypractice.R
-import com.example.dailypractice.utils.BarUtils
+import com.example.dailypractice.databinding.ActivityImmersiveBarBinding
 import com.example.dailypractice.utils.DeviceUtils
 import com.example.dailypractice.utils.PictureUtils
-import kotlinx.android.synthetic.main.activity_immersive_bar.*
 
 /**
  * Themes: NoActionBar
  * Add: implementation 'androidx.palette:palette:1.0.0'
  */
 class ImmersiveBar : AppCompatActivity() {
+    private lateinit var layoutBinding:ActivityImmersiveBarBinding
     companion object{
         const val TAG = "ImmersiveBar--"
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_immersive_bar)
-
+        layoutBinding = ActivityImmersiveBarBinding.inflate(layoutInflater)
+        setContentView(layoutBinding.root)
         window.statusBarColor = Color.TRANSPARENT
 
         /** 布局全屏，状态栏置于布局层之下，初步实现沉浸式状态栏 **/
@@ -63,7 +62,7 @@ class ImmersiveBar : AppCompatActivity() {
         // 将资源文件转为bitmap格式
         val bitmap = PictureUtils.imageToBitmap(this,image)
         Log.i(TAG, "onCreate: bitmap:$bitmap")
-        iv_bg.setImageBitmap(bitmap)
+        layoutBinding.ivBg.setImageBitmap(bitmap)
         detectBitmapColor(bitmap)
     }
 
