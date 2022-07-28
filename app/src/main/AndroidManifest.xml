@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.dailypractice">
+    package="com.wine.practice">
 
     <application
         android:allowBackup="true"
@@ -14,10 +14,10 @@
         android:theme="@style/Theme.DailyPractice"
         tools:targetApi="31">
         <activity
-            android:name=".viewbinding.BindingUsing"
+            android:name="com.wine.practice.binding.BindingUsing"
             android:exported="false" />
         <activity
-            android:name=".MenuActivity"
+            android:name="com.wine.practice.MenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,8 +26,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".statusbar.ImmersiveBar"
+            android:name="com.wine.practice.bar.ImmersiveBar"
             android:exported="false" />
+        <activity android:name="com.wine.practice.surface.SurfaceActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>

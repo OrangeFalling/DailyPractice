@@ -1,9 +1,7 @@
-package com.example.dailypractice.viewbinding
+package com.wine.practice.binding
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.dailypractice.R
 import com.example.dailypractice.databinding.BindingUsingBinding
 
 /**

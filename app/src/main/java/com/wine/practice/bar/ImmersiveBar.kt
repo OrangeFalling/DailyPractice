@@ -1,4 +1,4 @@
-package com.example.dailypractice.statusbar
+package com.wine.practice.bar
 
 import android.graphics.Bitmap
 import android.graphics.Color
@@ -14,8 +14,8 @@ import androidx.core.view.ViewCompat
 import androidx.palette.graphics.Palette
 import com.example.dailypractice.R
 import com.example.dailypractice.databinding.ActivityImmersiveBarBinding
-import com.example.dailypractice.utils.DeviceUtils
-import com.example.dailypractice.utils.PictureUtils
+import com.wine.practice.utils.DeviceUtils
+import com.wine.practice.utils.PictureUtils
 
 /**
  * Themes: NoActionBar

@@ -6,6 +6,7 @@
         <entry key="../../Library/Android/sdk/platforms/android-32/data/res/layout/auto_complete_list.xml" value="0.2947916666666667" />
         <entry key="app/src/main/res/layout/activity_immersive_bar.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_surface.xml" value="0.29375" />
         <entry key="app/src/main/res/layout/activity_view_binding_using.xml" value="0.2947916666666667" />
         <entry key="app/src/main/res/layout/binding_using.xml" value="0.29375" />
         <entry key="app/src/main/res/layout/test_layout.xml" value="0.30885416666666665" />

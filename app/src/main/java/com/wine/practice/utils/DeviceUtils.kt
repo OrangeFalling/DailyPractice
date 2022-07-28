@@ -1,7 +1,6 @@
-package com.example.dailypractice.utils
+package com.wine.practice.utils
 
 import android.app.Activity
-import android.content.Context
 import android.util.DisplayMetrics
 
 /**

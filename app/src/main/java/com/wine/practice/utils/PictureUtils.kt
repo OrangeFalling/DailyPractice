@@ -1,4 +1,4 @@
-package com.example.dailypractice.utils
+package com.wine.practice.utils
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -7,7 +7,6 @@ import android.graphics.Canvas
 import android.graphics.PixelFormat
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
-import com.example.dailypractice.R
 import java.io.ByteArrayOutputStream
 
 

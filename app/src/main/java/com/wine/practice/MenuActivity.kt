@@ -1,11 +1,12 @@
-package com.example.dailypractice
+package com.wine.practice
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.dailypractice.databinding.ActivityMainBinding
-import com.example.dailypractice.statusbar.ImmersiveBar
-import com.example.dailypractice.viewbinding.BindingUsing
+import com.wine.practice.bar.ImmersiveBar
+import com.wine.practice.surface.SurfaceActivity
+import com.wine.practice.binding.BindingUsing
 
 class MenuActivity : AppCompatActivity() {
     private lateinit var layoutBinding:ActivityMainBinding
@@ -18,11 +19,14 @@ class MenuActivity : AppCompatActivity() {
 
     private fun click(){
         layoutBinding.btnImmersiveStatusBar.setOnClickListener {
-            var intent = Intent(this,ImmersiveBar::class.java)
+            var intent = Intent(this, ImmersiveBar::class.java)
             startActivity(intent)
         }
         layoutBinding.btnViewBindingUsing.setOnClickListener {
-            startActivity(Intent(this,BindingUsing::class.java))
+            startActivity(Intent(this, BindingUsing::class.java))
+        }
+        layoutBinding.btnSurfaceView.setOnClickListener {
+            startActivity(Intent(this, SurfaceActivity::class.java))
         }
     }
 }

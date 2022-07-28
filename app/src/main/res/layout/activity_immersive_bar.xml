@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".statusbar.ImmersiveBar"
+    tools:context="com.wine.practice.bar.ImmersiveBar"
     android:background="#123462"
     android:id="@+id/root_layout">
 

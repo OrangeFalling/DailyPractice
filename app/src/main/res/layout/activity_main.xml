@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:columnCount="3"
     android:padding="10dp"
-    tools:context=".MenuActivity">
+    tools:context="com.wine.practice.MenuActivity">
 
     <TextView
         android:id="@+id/btn_immersive_status_bar"
@@ -38,13 +38,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/btn_surface_view"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:text=""
+        android:text="SurfaceView"
         android:textStyle="bold"
         android:layout_columnWeight="1"
         android:gravity="center"
         android:layout_margin="4dp"
+        android:background="@drawable/bg_demo_stroke"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
